@@ -1,11 +1,11 @@
 {
   "name": "promise-redis-ejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promisifies redis clients",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/richthegeek/promise-redis"
+    "url": "https://github.com/richthegeek/promise-redis-ejs"
   },
   "keywords": [
     "redis",

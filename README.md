@@ -19,6 +19,11 @@ const client = Redis.createClient();
 client.keys('*').then((keys) => {
   console.log(keys);
 });
+
+(async () => {
+  var keys = await client.keys('*');
+  console.log(keys);
+})
 ```
 
 ## Using FakeRedis for testing
@@ -27,6 +32,8 @@ const FakeRedis = require('fakeredis');
 const PromiseRedis = require('promise-redis-ejs');
 const client = PromiseRedis(FakeRedis).createClient();
 
-client.keys('*').then((keys) => {
-  console.log(keys); // empty array :)
-})```
+client.set('x', 'y').then(async () => {
+  var keys = await client.keys('*');
+  console.log(keys); // ['x']
+})
+```
