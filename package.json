@@ -1,24 +1,23 @@
 {
-    "name": "promise-redis",
-    "version": "0.0.5",
-    "description": "Tiny library that adds promise awareness to node_redis",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/maxbrieiev/promise-redis"
-    },
-    "keywords": [
-        "redis",
-        "promise",
-        "when",
-        "q",
-        "bluebird",
-        "then"
-    ],
-    "author": "Maksym Brieiev",
-    "license": "MIT",
-    "dependencies": {
-        "redis": "*",
-        "redis-commands": "*"
-    }
+  "name": "promise-redis-ejs",
+  "version": "1.0.0",
+  "description": "Promisifies redis clients",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richthegeek/promise-redis"
+  },
+  "keywords": [
+    "redis",
+    "promise"
+  ],
+  "author": "Richard Lyon",
+  "license": "MIT",
+  "dependencies": {
+    "redis": "*",
+    "redis-commands": "*"
+  },
+  "engines": {
+    "node": ">= 8.x"
+  }
 }
