@@ -19,11 +19,6 @@ const client = Redis.createClient();
 client.keys('*').then((keys) => {
   console.log(keys);
 });
-
-(async () => {
-  var keys = await client.keys('*');
-  console.log(keys);
-})
 ```
 
 ## Using FakeRedis for testing
